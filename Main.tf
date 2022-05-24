@@ -8,9 +8,12 @@ terraform {
      }
   } 
    backend "remote" {
-        organization = "AWSTerraformDemo"
+        organization = "OnixCFADemoPoc"
    workspaces {
-         name = "example-workspace"
+         name = "AWSTerraformDemo"
      }
   }
+}
+provider "aws" {
+  region = "us-east-2"
 }
